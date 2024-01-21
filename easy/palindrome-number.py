@@ -22,7 +22,7 @@ class WithoutStrSolution(object):
         # Check if the reversed integer is equal to the original
         return original_x == reversed_x
 
-print("withoutStrSolution")
+print("withoutStrSolution - Runtime 50 ms / Memory 11.72 mb")
 withoutStrSolution = WithoutStrSolution()
 
 
