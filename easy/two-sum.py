@@ -9,10 +9,8 @@ class Solution(object):
 
         for i, num in enumerate(nums):
             complement = target - num
-            print(num,complement)
             if complement in num_dict:
                 # If the complement is found in the dictionary, return the indices
-                print(num_dict[complement], i)
                 return [num_dict[complement], i]
             else:
                 # Otherwise, add the current number and its index to the dictionary
@@ -20,9 +18,32 @@ class Solution(object):
 
         # If no solution is found
         return None
+
+
 nums = [2, 7, 11, 15]
 target = 9
-
 solution = Solution()
 result = solution.twoSum(nums, target)
 print(result)
+
+# repeat without hints
+class Solution1(object):
+    def twoSum(self, nums, target):
+        dict = {}
+
+        for i, num in enumerate(nums):
+            difference = target - num
+
+            if difference in dict:
+                return [dict[difference], i]
+            else:
+                dict[num] = i
+        return None
+
+
+solution1 = Solution1()
+nums = [9, 7, 90, 10, 15]
+result = solution1.twoSum(nums, 100)
+print(result)
+
+
