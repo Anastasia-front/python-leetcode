@@ -63,8 +63,9 @@ class Solution:
             digits.insert(0, carry)
 
         return digits
-    
+
     # Runtime 38 ms / Memory 16.61 mb
+
 
 solution = Solution()
 digits = [1, 2, 3]
