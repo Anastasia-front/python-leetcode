@@ -10,6 +10,6 @@ def format_string(string):
     """
     return ''.join('_' if char == ' ' else char.lower() for char in string)
 
-input_string = "File Name"
+input_string = "Valid Palindrome"
 formatted_string = format_string(input_string)
 print(formatted_string)
