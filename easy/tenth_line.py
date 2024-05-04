@@ -10,3 +10,25 @@ fi
 """
 
 # Runtime 33 ms / Memory 3.70 mb
+
+
+solution = """
+if [ -f file.txt ]; then
+    if [ $(wc -l < file.txt) -ge 10 ]; then
+        sed -n '10p' file.txt
+    fi
+fi
+"""
+
+# Runtime 30 ms / Memory 3.88 mb
+
+
+solution = """
+if [ -f file.txt ]; then
+    if [ $(wc -l < file.txt) -ge 10 ]; then
+        awk 'NR == 10' file.txt
+    fi
+fi
+"""
+
+# Runtime 25 ms / Memory 4.03 mb
