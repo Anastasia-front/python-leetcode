@@ -29,7 +29,8 @@ class MyStack:
         return not self.q1 and not self.q2
 
 
-c
+# Runtime 30 ms / Memory 16.79 mb
+
 
 # Example 1
 # Input: ["MyStack", "push", "push", "top", "pop", "empty"]
