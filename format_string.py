@@ -11,7 +11,7 @@ def format_string(string):
     return "".join("_" if char == " " else char.lower() for char in string)
 
 
-input_string = "First Bad Version"
+input_string = "Move Zeroes"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
