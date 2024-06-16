@@ -1,6 +1,7 @@
 def format_string(string):
     """
-    Formats a string by replacing uppercase letters with lowercase letters and spaces with underscores.
+    Formats a string by replacing uppercase letters with lowercase letters,
+    spaces with underscores, and removing dots.
 
     Parameters:
         string (str): The input string to be formatted.
@@ -8,10 +9,9 @@ def format_string(string):
     Returns:
         str: The formatted string.
     """
-    return "".join("_" if char == " " else char.lower() for char in string)
+    return "".join("_" if char == " " else char.lower() if char != "." else "" for char in string)
 
-
-input_string = "400 Nth Digit"
+input_string = "399. Evaluate Division"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
