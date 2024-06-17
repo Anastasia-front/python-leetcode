@@ -11,7 +11,7 @@ def format_string(string):
     """
     return "".join("_" if char == " " else char.lower() if char != "." else "" for char in string)
 
-input_string = "399. Evaluate Division"
+input_string = "398. Random Pick Index"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
