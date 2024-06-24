@@ -11,7 +11,7 @@ def format_string(string):
     """
     return "".join("_" if char == " " else char.lower() if char != "." else "" for char in string)
 
-input_string = "393. UTF-8 Validation"
+input_string = "390. Elimination Game"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
