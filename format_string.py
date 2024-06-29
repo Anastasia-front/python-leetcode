@@ -11,7 +11,7 @@ def format_string(string):
     """
     return "".join("_" if char == " " else char.lower() if char != "." else "" for char in string)
 
-input_string = "384. Shuffle an Array"
+input_string = "382. Linked List Random Node"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
