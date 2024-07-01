@@ -11,7 +11,7 @@ def format_string(string):
     """
     return "".join("_" if char == " " else char.lower() if char != "." else "" for char in string)
 
-input_string = "380. Insert Delete GetRandom O(1)"
+input_string = "378. Kth Smallest Element in a Sorted Matrix"
 formatted_string = format_string(input_string)
 print(formatted_string)
 
